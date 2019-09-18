@@ -1,6 +1,6 @@
 package mfernflower.MinecraftRX;
 
-/*    Copyright (c) 2019 
+/*    Copyright (c) 2019 MFernflower and KarelMikie3
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
@@ -51,7 +51,7 @@ public class MinecraftRxMain
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public GKPKMain() {
+    public MinecraftRxMain() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         MinecraftForge.EVENT_BUS.register(this);
     }
