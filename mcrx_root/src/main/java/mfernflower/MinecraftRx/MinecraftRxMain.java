@@ -1,4 +1,4 @@
-package mfernflower.MinecraftRX;
+package mfernflower.MinecraftRx;
 
 /*    Copyright (c) 2019 MFernflower and KarelMikie3
 
@@ -106,6 +106,7 @@ public class MinecraftRxMain
         musc.setDisplayName(new StringTextComponent("\u00A7RMuscimol"));
         BrewingRecipeRegistry.addRecipe(Ingredient.fromStacks(new ItemStack(Items.POTION)),Ingredient.fromStacks(new ItemStack(Items.RED_MUSHROOM_BLOCK)),musc);
         //
+        ItemStack pltx = new ItemStack(Items.LINGERING_POTION);
 
     }
 }
