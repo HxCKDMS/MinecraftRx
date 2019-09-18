@@ -51,7 +51,7 @@ public class MinecraftRxMain
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public GKPKMain() {
+    public MinecraftRxMain() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         MinecraftForge.EVENT_BUS.register(this);
     }
