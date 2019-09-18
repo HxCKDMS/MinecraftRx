@@ -1,5 +1,5 @@
-package mfernflower.GKPK;
-
+package mfernflower.MinecraftRX;
+// This java file is under MIT lic 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemStack;
@@ -25,8 +25,8 @@ import java.util.List;
 // brewing this mod's pots with gunpowder, glowstone etc causes the pots to be replaced with effectless pots
 // brewing this mod's pots requires you to attend the brewing stand as it has no potion done check and can just loop
 
-@Mod("gkpk")
-public class GKPKMain
+@Mod("mcrx")
+public class MinecraftRxMain
 {
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
@@ -38,7 +38,7 @@ public class GKPKMain
 
     private void setup(final FMLCommonSetupEvent event)
     {
-        LOGGER.info("GKPK: start brewing register");
+        LOGGER.info("MinecraftRx: start brewing register!");
         // Getting high from magic mushrooms
         ItemStack magicshroom = new ItemStack(Items.POTION);
         magicshroom.setDisplayName(new StringTextComponent("\u00A7RWeak Psilocybin"));
