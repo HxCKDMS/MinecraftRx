@@ -3,6 +3,6 @@ loaderVersion="[28,)"
 [[mods]]
 modId="mcrx"
 version="Alpha 1"
-displayName="The Gordian Knot Pharmacy Kit"
+displayName="MinecraftRx"
 authors="MFernflower and KarelMikie3"
 description='''Pharmacognosy in minecraft!'''
