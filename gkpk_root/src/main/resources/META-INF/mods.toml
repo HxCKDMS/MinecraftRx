@@ -1,0 +1,8 @@
+modLoader="javafml"
+loaderVersion="[28,)"
+[[mods]]
+modId="gkpk"
+version="Alpha 1"
+displayName="The Gordian Knot Pharmacy Kit"
+authors="MFernflower and KarelMikie3"
+description='''Pharmacognosy in minecraft!'''
