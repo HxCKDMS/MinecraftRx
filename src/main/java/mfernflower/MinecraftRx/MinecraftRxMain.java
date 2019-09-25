@@ -19,9 +19,8 @@ package mfernflower.MinecraftRx;
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.*/
-	
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
+
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
@@ -39,11 +38,9 @@ import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
 import java.util.List;
 
-
 // Current limitations of using inbuilt potion system as opposed to adding my own items:
-// I cannot seem to make a brewing stand craft that requires more than one of something (could be my fault???)
-// brewing this mod's pots with gunpowder, glowstone etc causes the pots to be replaced with effectless pots
-// brewing this mod's pots requires you to attend the brewing stand as it has no potion done check and can just loop
+// brewing this mod's pots with gunpowder, glowstone etc causes the pots to be replaced with useless pots
+// brewing this mod's pots requires you to attend the brewing stand as it has no potion done check and can just loop 
 
 @Mod("mcrx")
 public class MinecraftRxMain
@@ -59,7 +56,7 @@ public class MinecraftRxMain
     private void setup(final FMLCommonSetupEvent event)
     {
         LOGGER.info("MinecraftRx: start brewing register!");
-        // Getting high from magic mushrooms
+        // Magic Mushrooms I
         ItemStack magicshroom = new ItemStack(Items.POTION);
         magicshroom.setDisplayName(new StringTextComponent("\u00A7RWeak Psilocybin"));
         List<EffectInstance> effectshroom = new ArrayList<>();
@@ -89,12 +86,12 @@ public class MinecraftRxMain
         // poppies and morphine
         ItemStack morphinebottle = new ItemStack(Items.POTION);
         List<EffectInstance> morphine = new ArrayList<>();
-        morphine.add(new EffectInstance(Effect.get(9), 500,  0, false, false));
+        morphine.add(new EffectInstance(Effect.get(9), 450,  0, false, false));
         morphine.add(new EffectInstance(Effect.get(6), 0,  0, false, false)); // 2 hp heal as to not make overpowered
         PotionUtils.appendEffects(morphinebottle,morphine);
         morphinebottle.setDisplayName(new StringTextComponent("\u00A7RWeak Morphine"));
         BrewingRecipeRegistry.addRecipe(Ingredient.fromStacks(new ItemStack(Items.POTION)),Ingredient.fromStacks(new ItemStack(Items.POPPY)),morphinebottle);
-        //
+        // Magic mushrooms part II
         ItemStack musc = new ItemStack(Items.POTION);
         List<EffectInstance> mtrip = new ArrayList<>();
         mtrip.add(new EffectInstance(Effect.get(9), 600,  0, false, false));
@@ -105,17 +102,19 @@ public class MinecraftRxMain
         musc.getTag().putInt("CustomPotionColor", 7733494);
         musc.setDisplayName(new StringTextComponent("\u00A7RMuscimol"));
         BrewingRecipeRegistry.addRecipe(Ingredient.fromStacks(new ItemStack(Items.POTION)),Ingredient.fromStacks(new ItemStack(Items.RED_MUSHROOM_BLOCK)),musc);
-        //
+        // Coral toxins part I
         ItemStack fcoraltx = new ItemStack(Items.LINGERING_POTION);
         List<EffectInstance> irritant = new ArrayList<>();
-        irritant.add(new EffectInstance(Effect.get(19), 200,  1, false, false));
+        irritant.add(new EffectInstance(Effect.get(19), 250,  0, false, false));
         PotionUtils.appendEffects(fcoraltx,irritant);
         fcoraltx.setDisplayName(new StringTextComponent("\u00A7RComplanine")); // This is cheese because IRL this is a worm toxin not a coral one!
         fcoraltx.getTag().putInt("CustomPotionColor", 5576214);
         BrewingRecipeRegistry.addRecipe(Ingredient.fromStacks(new ItemStack(Items.POTION)),Ingredient.fromStacks(new ItemStack(Items.FIRE_CORAL)),fcoraltx);
         //
+        ItemStack NZA = new ItemStack(Items.POTION);
+        List<EffectInstance> strpot = new ArrayList<>();
+        //
 
-
-
+        LOGGER.info("MinecraftRx: Passed");
     }
 }
