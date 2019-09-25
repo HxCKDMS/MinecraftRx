@@ -40,7 +40,7 @@ import java.util.List;
 
 // Current limitations of using inbuilt potion system as opposed to adding my own items:
 // brewing this mod's pots with gunpowder, glowstone etc causes the pots to be replaced with useless pots
-// brewing this mod's pots requires you to attend the brewing stand as it has no potion done check and can just loop 
+// brewing this mod's pots requires you to attend the brewing stand as it has no potion done check and can just loop
 
 @Mod("mcrx")
 public class MinecraftRxMain
@@ -111,8 +111,14 @@ public class MinecraftRxMain
         fcoraltx.getTag().putInt("CustomPotionColor", 5576214);
         BrewingRecipeRegistry.addRecipe(Ingredient.fromStacks(new ItemStack(Items.POTION)),Ingredient.fromStacks(new ItemStack(Items.FIRE_CORAL)),fcoraltx);
         //
-        ItemStack NZA = new ItemStack(Items.POTION);
+        ItemStack nza = new ItemStack(Items.POTION);
         List<EffectInstance> strpot = new ArrayList<>();
+        strpot.add(new EffectInstance(Effect.get(3), 300,  1, false, false));
+        strpot.add(new EffectInstance(Effect.get(5), 300,  0, false, false));
+        PotionUtils.appendEffects(nza,strpot);
+        nza.setDisplayName(new StringTextComponent("\u00A7RNorzoanthamine"));
+        nza.getTag().putInt("CustomPotionColor", 9323274);
+        BrewingRecipeRegistry.addRecipe(Ingredient.fromStacks(new ItemStack(Items.POTION)),Ingredient.fromStacks(new ItemStack(Items.TUBE_CORAL)),nza);
         //
 
         LOGGER.info("MinecraftRx: Passed");
