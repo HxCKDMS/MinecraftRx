@@ -110,7 +110,7 @@ public class MinecraftRxMain
         fcoraltx.setDisplayName(new StringTextComponent("\u00A7RComplanine")); // This is cheese because IRL this is a worm toxin not a coral one!
         fcoraltx.getTag().putInt("CustomPotionColor", 5576214);
         BrewingRecipeRegistry.addRecipe(Ingredient.fromStacks(new ItemStack(Items.POTION)),Ingredient.fromStacks(new ItemStack(Items.FIRE_CORAL)),fcoraltx);
-        //
+        // Norzoanthamine
         ItemStack nza = new ItemStack(Items.POTION);
         List<EffectInstance> strpot = new ArrayList<>();
         strpot.add(new EffectInstance(Effect.get(3), 300,  1, false, false));
@@ -120,6 +120,7 @@ public class MinecraftRxMain
         nza.getTag().putInt("CustomPotionColor", 9323274);
         BrewingRecipeRegistry.addRecipe(Ingredient.fromStacks(new ItemStack(Items.POTION)),Ingredient.fromStacks(new ItemStack(Items.TUBE_CORAL)),nza);
         //
+        
 
         LOGGER.info("MinecraftRx: Passed");
     }
