@@ -7,8 +7,8 @@ A simple (currently only one class) mod that adds in (currently 7) unique potion
 Currently only for 1.14
 
 Mod quirks:
-Please note that when making these potions that as soon as they are finished brewing they need to be removed from the stand or they will brew loop and waste materials
-These potions cannot be modified by glowstone or any other potion modifying items (E.G gunpowder)
+* Please note that when making these potions that as soon as they are finished brewing they need to be removed from the stand or they will brew loop and waste materials
+* These potions cannot be modified by glowstone or any other potion modifying items (E.G gunpowder)
 
 Potions added (current as of version one):
 
