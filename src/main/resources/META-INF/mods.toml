@@ -2,7 +2,7 @@ modLoader="javafml"
 loaderVersion="[28,)"
 [[mods]]
 modId="mcrx"
-version="Alpha 1"
+version="1"
 displayName="MinecraftRx"
 authors="MFernflower and KarelMikie3"
 description='''Pharmacognosy in minecraft!'''
