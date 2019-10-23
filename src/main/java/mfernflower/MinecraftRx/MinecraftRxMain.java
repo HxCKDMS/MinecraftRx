@@ -104,11 +104,13 @@ public class MinecraftRxMain
         BrewingRecipeRegistry.addRecipe(Ingredient.fromStacks(new ItemStack(Items.POTION)),Ingredient.fromStacks(new ItemStack(Items.RED_MUSHROOM_BLOCK)),musc);
         // Coral toxins part I
         ItemStack fcoraltx = new ItemStack(Items.LINGERING_POTION);
-        List<EffectInstance> irritant = new ArrayList<>();
-        irritant.add(new EffectInstance(Effect.get(19), 220,  0, false, false));
-        PotionUtils.appendEffects(fcoraltx,irritant);
+        // List<EffectInstance> irritant = new ArrayList<>();
+        // irritant.add(new EffectInstance(Effect.get(19), 220,  0, false, false));
+        //PotionUtils.appendEffects(fcoraltx,irritant);
+        // The way Minecraft does lingering potions is odd 
         fcoraltx.setDisplayName(new StringTextComponent("\u00A7RComplanine")); // This is cheese because IRL this is a worm toxin not a coral one!
         fcoraltx.getTag().putInt("CustomPotionColor", 5576233);
+        fcoraltx.getTag().putString("Potion","minecraft:poison");
         BrewingRecipeRegistry.addRecipe(Ingredient.fromStacks(new ItemStack(Items.POTION)),Ingredient.fromStacks(new ItemStack(Items.FIRE_CORAL)),fcoraltx);
         // Norzoanthamine
         ItemStack nza = new ItemStack(Items.POTION);
