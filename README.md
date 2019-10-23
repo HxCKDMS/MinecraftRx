@@ -18,7 +18,7 @@ Potions added (current as of version one):
 * Muscimol: Nausea, Glowing, Blindness and Night Vision effects at the same time for 30 seconds - Makes for an interesting in-game "trip" - Made from red mushroom blocks
 * Weak Psilocybin: Diffrent in-game "trip" - Nausea, Glowing and Night Vision at the same time for 60 seconds - Made from brown mushroom blocks
 * Norzoanthamine: Haste II for 15 seconds and strength I for 15 seconds - made from blue tube coral
-* Complanine: Poison I for 15 seconds (lingering potion) - made from fire coral
+* Complanine: lingering poison potion - made from fire coral
 
 
 
