@@ -105,10 +105,10 @@ public class MinecraftRxMain
         // Coral toxins part I
         ItemStack fcoraltx = new ItemStack(Items.LINGERING_POTION);
         List<EffectInstance> irritant = new ArrayList<>();
-        irritant.add(new EffectInstance(Effect.get(19), 100,  0, false, false));
+        irritant.add(new EffectInstance(Effect.get(19), 120,  0, false, false));
         PotionUtils.appendEffects(fcoraltx,irritant);
         fcoraltx.setDisplayName(new StringTextComponent("\u00A7RComplanine")); // This is cheese because IRL this is a worm toxin not a coral one!
-        fcoraltx.getTag().putInt("CustomPotionColor", 5576214);
+        fcoraltx.getTag().putInt("CustomPotionColor", 5576233);
         BrewingRecipeRegistry.addRecipe(Ingredient.fromStacks(new ItemStack(Items.POTION)),Ingredient.fromStacks(new ItemStack(Items.FIRE_CORAL)),fcoraltx);
         // Norzoanthamine
         ItemStack nza = new ItemStack(Items.POTION);
