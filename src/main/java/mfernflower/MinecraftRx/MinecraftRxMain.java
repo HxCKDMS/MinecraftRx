@@ -104,13 +104,8 @@ public class MinecraftRxMain
         BrewingRecipeRegistry.addRecipe(Ingredient.fromStacks(new ItemStack(Items.POTION)),Ingredient.fromStacks(new ItemStack(Items.RED_MUSHROOM_BLOCK)),musc);
         // Coral toxins part I
         ItemStack fcoraltx = new ItemStack(Items.LINGERING_POTION);
-        // List<EffectInstance> irritant = new ArrayList<>();
-        // irritant.add(new EffectInstance(Effect.get(19), 220,  0, false, false));
-        //PotionUtils.appendEffects(fcoraltx,irritant);
-        // The way Minecraft does lingering potions is odd
         fcoraltx.setDisplayName(new StringTextComponent("\u00A7RComplanine")); // This is cheese because IRL this is a worm toxin not a coral one!
-        // fcoraltx.getTag().putInt("CustomPotionColor", 5576233);
-        fcoraltx.getTag().putString("Potion","minecraft:poison");
+        fcoraltx.getTag().putString("Potion","minecraft:poison");  // The way Minecraft does lingering potions is odd
         BrewingRecipeRegistry.addRecipe(Ingredient.fromStacks(new ItemStack(Items.POTION)),Ingredient.fromStacks(new ItemStack(Items.FIRE_CORAL)),fcoraltx);
         // Norzoanthamine
         ItemStack nza = new ItemStack(Items.POTION);
@@ -121,8 +116,25 @@ public class MinecraftRxMain
         nza.setDisplayName(new StringTextComponent("\u00A7RNorzoanthamine"));
         nza.getTag().putInt("CustomPotionColor", 9323274);
         BrewingRecipeRegistry.addRecipe(Ingredient.fromStacks(new ItemStack(Items.POTION)),Ingredient.fromStacks(new ItemStack(Items.TUBE_CORAL)),nza);
+        // Paeonol
+        ItemStack paeo = new ItemStack(Items.POTION);
+        List<EffectInstance> paeonol = new ArrayList<>();
+        paeonol.add(new EffectInstance(Effect.get(2), 400,  0, false, false));
+        paeonol.add(new EffectInstance(Effect.get(6), 0,  0, false, false)); // 2 hp heal as to not make overpowered
+        PotionUtils.appendEffects(paeo,paeonol);
+        paeo.setDisplayName(new StringTextComponent("\u00A7RPeony Extract"));
+        paeo.getTag().putInt("CustomPotionColor", 27126);
+        BrewingRecipeRegistry.addRecipe(Ingredient.fromStacks(new ItemStack(Items.POTION)),Ingredient.fromStacks(new ItemStack(Items.PEONY)),paeo);
+        // Cornflower
+        ItemStack cflowerjuice = new ItemStack(Items.POTION);
+        List<EffectInstance> cflower = new ArrayList<>();
+        cflower.add(new EffectInstance(Effect.get(9), 450,  0, false, false));
+        cflower.add(new EffectInstance(Effect.get(5), 0,  0, false, false));
+        PotionUtils.appendEffects(cflowerjuice,cflower);
+        cflowerjuice.setDisplayName(new StringTextComponent("\u00A7RCornflower Extract"));
+        cflowerjuice.getTag().putInt("CustomPotionColor", 59129);
+        BrewingRecipeRegistry.addRecipe(Ingredient.fromStacks(new ItemStack(Items.POTION)),Ingredient.fromStacks(new ItemStack(Items.CORNFLOWER)),cflowerjuice);
         //
-        
 
         LOGGER.info("MinecraftRx: Passed");
     }
