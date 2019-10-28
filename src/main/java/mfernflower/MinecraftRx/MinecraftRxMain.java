@@ -20,7 +20,6 @@ package mfernflower.MinecraftRx;
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.*/
 
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
@@ -135,7 +134,6 @@ public class MinecraftRxMain
         cflowerjuice.getTag().putInt("CustomPotionColor", 59129);
         BrewingRecipeRegistry.addRecipe(Ingredient.fromStacks(new ItemStack(Items.POTION)),Ingredient.fromStacks(new ItemStack(Items.CORNFLOWER)),cflowerjuice);
         //
-
         LOGGER.info("MinecraftRx: Passed");
     }
 }
