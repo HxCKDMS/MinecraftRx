@@ -1,6 +1,6 @@
 # MinecraftRx
 
-A simple (currently only one class) mod that adds in (currently 7) unique potions based loosely on real-life pharmacy and pharmacognosy
+A simple (currently only one class) mod that adds in  unique potions based loosely on real-life pharmacy and pharmacognosy
 
 <b> Please note this mod may not fully be family friendly as it contains mild refrences to illcit drugs! </b>
 
@@ -20,7 +20,7 @@ Potions added (current as of version one):
 * Norzoanthamine: Haste II for 15 seconds and strength I for 15 seconds - made from blue tube coral
 * Complanine: lingering poison potion - made from fire coral
 * Peony Extract: slowness (~20 seconds) and instant health I - made from Peony flowers
-* Cornflower Extract: Nasuea and strenght for 22 seconds
+* Cornflower Extract: Nasuea and strength for 22 seconds
 
 Future plans:
 * Add ability for mod to be translated
