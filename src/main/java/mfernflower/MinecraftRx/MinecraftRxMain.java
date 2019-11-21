@@ -110,7 +110,7 @@ public class MinecraftRxMain
         ItemStack nza = new ItemStack(Items.POTION);
         List<EffectInstance> strpot = new ArrayList<>();
         strpot.add(new EffectInstance(Effect.get(3), 300,  1, false, false));
-        strpot.add(new EffectInstance(Effect.get(5), 300,  0, false, false));
+        strpot.add(new EffectInstance(Effect.get(5), 300,  1, false, false));
         PotionUtils.appendEffects(nza,strpot);
         nza.setDisplayName(new StringTextComponent("\u00A7RNorzoanthamine"));
         nza.getTag().putInt("CustomPotionColor", 9323274);
@@ -128,12 +128,12 @@ public class MinecraftRxMain
         ItemStack cflowerjuice = new ItemStack(Items.POTION);
         List<EffectInstance> cflower = new ArrayList<>();
         cflower.add(new EffectInstance(Effect.get(9), 450,  0, false, false));
-        cflower.add(new EffectInstance(Effect.get(5), 0,  0, false, false));
+        cflower.add(new EffectInstance(Effect.get(5), 0,  1, false, false));
         PotionUtils.appendEffects(cflowerjuice,cflower);
         cflowerjuice.setDisplayName(new StringTextComponent("\u00A7RCornflower Extract"));
         cflowerjuice.getTag().putInt("CustomPotionColor", 59129);
         BrewingRecipeRegistry.addRecipe(Ingredient.fromStacks(new ItemStack(Items.POTION)),Ingredient.fromStacks(new ItemStack(Items.CORNFLOWER)),cflowerjuice);
-        //
+        // ********************
         LOGGER.info("MinecraftRx: Passed");
     }
 }
