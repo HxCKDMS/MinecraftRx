@@ -128,7 +128,7 @@ public class MinecraftRxMain
         ItemStack cflowerjuice = new ItemStack(Items.POTION);
         List<EffectInstance> cflower = new ArrayList<>();
         cflower.add(new EffectInstance(Effect.get(9), 450,  0, false, false));
-        cflower.add(new EffectInstance(Effect.get(5), 0,  1, false, false));
+        cflower.add(new EffectInstance(Effect.get(5), 300,  1, false, false));
         PotionUtils.appendEffects(cflowerjuice,cflower);
         cflowerjuice.setDisplayName(new StringTextComponent("\u00A7RCornflower Extract"));
         cflowerjuice.getTag().putInt("CustomPotionColor", 59129);
