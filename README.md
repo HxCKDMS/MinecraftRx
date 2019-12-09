@@ -19,7 +19,7 @@ Potions added (current as of version one):
 * Weak Psilocybin: Diffrent in-game "trip" - Nausea, Glowing and Night Vision at the same time for 60 seconds - Made from brown mushroom blocks
 * Norzoanthamine: Haste II for 15 seconds and strength I for 15 seconds - made from blue tube coral
 * Complanine: lingering poison potion - made from fire coral
-* Cornflower Extract: Strength for 15 seconds nausea for ~22 seconds - made from cornflower
+* Cornflower Extract: Strength for 15 seconds and nausea for ~22 seconds - made from cornflower
 * Peony Extract: Instant health I followed by 20 seconds of slowness - made from peony 
 
 Future plans:
