@@ -39,7 +39,7 @@ import java.util.List;
 
 // Current limitations of using inbuilt potion system as opposed to adding my own items:
 // brewing this mod's pots with gunpowder, glowstone etc causes the pots to be replaced with useless pots
-// brewing this mod's pots requires you to attend the brewing stand as it has no potion done check and can just loop
+// brewing this mod's pots requires you to attend the brewing stand as it has no "potion done" check and can just loop
 
 @Mod("mcrx")
 public class MinecraftRxMain
@@ -134,6 +134,6 @@ public class MinecraftRxMain
         cflowerjuice.getTag().putInt("CustomPotionColor", 59129);
         BrewingRecipeRegistry.addRecipe(Ingredient.fromStacks(new ItemStack(Items.POTION)),Ingredient.fromStacks(new ItemStack(Items.CORNFLOWER)),cflowerjuice);
         // ********************
-        LOGGER.info("MinecraftRx: Passed");
+        LOGGER.info("MinecraftRx has loaded successfully");
     }
 }
