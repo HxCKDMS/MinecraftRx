@@ -133,6 +133,7 @@ public class MinecraftRxMain
         cflowerjuice.setDisplayName(new StringTextComponent("\u00A7RCornflower Extract"));
         cflowerjuice.getTag().putInt("CustomPotionColor", 59129);
         BrewingRecipeRegistry.addRecipe(Ingredient.fromStacks(new ItemStack(Items.POTION)),Ingredient.fromStacks(new ItemStack(Items.CORNFLOWER)),cflowerjuice);
+        // Sweet berries 
         ItemStack caff = new ItemStack(Items.POTION);
         List<EffectInstance> caffx = new ArrayList<>();
         caffx.add(new EffectInstance(Effect.get(1), 600,  0, false, false));
