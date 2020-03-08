@@ -133,7 +133,13 @@ public class MinecraftRxMain
         cflowerjuice.setDisplayName(new StringTextComponent("\u00A7RCornflower Extract"));
         cflowerjuice.getTag().putInt("CustomPotionColor", 59129);
         BrewingRecipeRegistry.addRecipe(Ingredient.fromStacks(new ItemStack(Items.POTION)),Ingredient.fromStacks(new ItemStack(Items.CORNFLOWER)),cflowerjuice);
-        // ********************
+        ItemStack caff = new ItemStack(Items.POTION);
+        List<EffectInstance> caffx = new ArrayList<>();
+        caffx.add(new EffectInstance(Effect.get(1), 600,  0, false, false));
+        caffx.add(new EffectInstance(Effect.get(3), 600,  1, false, false));
+        PotionUtils.appendEffects(caff,caffx);
+        caff.setDisplayName(new StringTextComponent("\u00A7RCaffeine"));
+        BrewingRecipeRegistry.addRecipe(Ingredient.fromStacks(new ItemStack(Items.POTION)),Ingredient.fromStacks(new ItemStack(Items.SWEET_BERRIES)),caff);
         LOGGER.info("MinecraftRx has loaded successfully");
     }
 }
