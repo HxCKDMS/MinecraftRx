@@ -4,9 +4,9 @@ A simple (currently only one class) mod that adds in (currently 8) unique potion
 
 <b> Please note this mod may not fully be family friendly as it contains mild refrences to illcit drugs! </b>
 
-Currently only for 1.14
+for versions 1.14+ 
 
-Mod quirks:
+Mod quirks as of first release:
 * Please note that when making these potions that as soon as they are finished brewing they need to be removed from the stand or they will brew loop and waste materials
 * These potions cannot be modified by glowstone or any other potion modifying items (E.G gunpowder)
 
@@ -25,5 +25,5 @@ Potions added (current as of version one):
 
 Future plans:
 * Add ability for mod to be translated
-* Attempt to fix brew loop issue
+* Add a in single machine to replace the scabby brewing stand code 
 * Add in more drugs 
