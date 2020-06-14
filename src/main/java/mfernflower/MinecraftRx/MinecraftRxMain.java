@@ -37,7 +37,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
 import java.util.List;
 
-// Current limitations of using inbuilt potion system as opposed to adding my own items:
+// Current limitations of using inbuilt potion system as opposed to adding my own machine to do crafting:
 // brewing this mod's pots with gunpowder, glowstone etc causes the pots to be replaced with useless pots
 // brewing this mod's pots requires you to attend the brewing stand as it has no "potion done" check and can just loop
 
