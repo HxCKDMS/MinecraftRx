@@ -4,7 +4,7 @@ A simple (currently only one class) mod that adds in (currently 8) unique potion
 
 <b> Please note this mod may not fully be family friendly as it contains mild refrences to illcit drugs! </b>
 
-for versions 1.14+ 
+1.15.2 
 
 Mod quirks as of first release:
 * Please note that when making these potions that as soon as they are finished brewing they need to be removed from the stand or they will brew loop and waste materials
