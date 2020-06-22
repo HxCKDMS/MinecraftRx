@@ -1,13 +1,12 @@
 # MinecraftRx
 
-A simple (currently only one class) mod that adds in (currently 8) unique potions based loosely on real-life pharmacy and pharmacognosy
+<strike>A simple (currently only one class) mod that adds in (currently 8) unique potions based loosely on real-life pharmacy and pharmacognosy </strike>
 
 <b> Please note this mod may not fully be family friendly as it contains mild refrences to illcit drugs! </b>
 
 1.15.2 
 
-Mod quirks as of first release:
-* Please note that when making these potions that as soon as they are finished brewing they need to be removed from the stand or they will brew loop and waste materials
+
 * These potions cannot be modified by glowstone or any other potion modifying items (E.G gunpowder)
 
 Potions added (current as of version one):
@@ -23,7 +22,3 @@ Potions added (current as of version one):
 * Peony Extract: Instant health I followed by 20 seconds of slowness - made from peony 
 * Caffeine: Speed and Haste for 15 seconds - made from sweet berries
 
-Future plans:
-* Add ability for mod to be translated
-* Add a in single machine to replace the scabby brewing stand code 
-* Add in more drugs 
